@@ -19,6 +19,7 @@ function Player(props) {
         <li key={poke}>
           <img src={`./images/${poke}.png`} alt={`(#${poke}) Sprite`} />
           <br />
+          {props.pokemon.name}
           <br />
         </li>
         <li key={poke1}>

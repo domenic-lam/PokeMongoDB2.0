@@ -1,3 +1,13 @@
-ol {
-  margin: 5px;
+ol li{
+  columns: 1;
+  float: left;
+  width: 33.33333%;
+  list-style-position: inside;
+}
+
+button {
+  align-items: center;
+  background-color: #FF0000;
+  color: black;
+  border-color: #CC0000;
 }

@@ -12,13 +12,13 @@ function Favorites(props) {
     console.log(favArray);
     return favArray.map((p) => (
       <li key={p}>
-        {p} (#{p}) <br />
+        {p} (#{p}) <br/>
         <img
           src={`./images/${p}.png`}
           alt={`${p} (#${p}) Sprite`}
           title={`${p} (#${p})`}
         />{" "}
-        <br />
+        <br/>
         <form action="/updateTeam" method="post">
           <label htmlFor="position">
             Choose the position: <br />
@@ -62,7 +62,7 @@ function Favorites(props) {
   };
 
   return (
-    <div>
+    <div class="col">
       <ol>{renderFavorites()}</ol>
     </div>
   );

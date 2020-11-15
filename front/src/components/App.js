@@ -11,7 +11,7 @@ function App() {
   const [showPokemon, setShowPokemon] = useState(false);
   const [player, setPlayer] = useState([]);
   const [showTeam, setShowTeam] = useState(false);
-  const [user, setUser] = useState("");
+  const [user, setUser] = useState("Enter User");
   const [showUserEnter, setShowUserEnter] = useState(true);
   const [favorites, setFavorites] = useState([]);
   const [showFavorites, setShowFavorites] = useState(false);
@@ -72,7 +72,7 @@ function App() {
 
   return (
     <div className="App">
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-light">
         <a className="navbar-brand" href="/">
           <img
             src="./images/pika.png"
@@ -83,7 +83,7 @@ function App() {
           PokeMongoDB
         </a>
         <a
-          className="nav-item active nav-link"
+          className="nav-item nav-link"
           href="teamEdit"
           onClick={(evt) => {
             evt.preventDefault();
@@ -96,7 +96,7 @@ function App() {
           Team Page<span className="sr-only">(current)</span>
         </a>
         <a
-          className="nav-item active nav-link"
+          className="nav-item nav-link"
           href="pokeList"
           onClick={(evt) => {
             evt.preventDefault();
@@ -109,7 +109,7 @@ function App() {
           Pokemon List<span className="sr-only">(current)</span>
         </a>
         <a
-          className="nav-item active mavbar-nav nav-link navbar-right"
+          className="nav-item nav-link"
           href="favoriteMon"
           onClick={(evt) => {
             evt.preventDefault();
@@ -123,7 +123,7 @@ function App() {
           <span className="sr-only">(current)</span>
         </a>
         <a
-          className="nav-item active mavbar-nav nav-link navbar-right"
+          className="nav-item active nav-link navbar-right"
           href="userlogin"
           onClick={(evt) => {
             evt.preventDefault();
@@ -138,37 +138,43 @@ function App() {
         </a>
       </nav>
       <div class="container text-left">
-        <h1>Build Your Best Team!</h1>
-        {showUserEnter ? (
-          <User handleChange={handleChange} player={player}></User>
-        ) : (
-          ""
-        )}
-        {showFavorites ? (
-          <Favorites favorites={favorites} user={user}></Favorites>
-        ) : (
-          ""
-        )}
-        {showPokemon ? (
-          <Pokemon player={player} pokemon={pokemon} user={user}></Pokemon>
-        ) : (
-          ""
-        )}
-        {showTeam ? (
-          <Player player={player} pokemon={pokemon} user={user}></Player>
-        ) : (
-          ""
-        )}
-        <br />
-        <footer>
-          Created by Alex Moeller and Ely Lam 2020{" "}
-          <img
-            src="./images/pokeball.png"
-            alt="Pokeball"
-            title="Pokeball"
-            width="20"
-          />
-        </footer>
+        <div class="row">
+          <h1>Build Your Best Team!</h1>
+        </div>
+        <div class="row">
+          {showUserEnter ? (
+            <User handleChange={handleChange} player={player}></User>
+          ) : (
+            ""
+          )}
+          {showTeam ? (
+            <Player player={player} pokemon={pokemon} user={user}></Player>
+          ) : (
+            ""
+          )}
+          {showPokemon ? (
+            <Pokemon player={player} pokemon={pokemon} user={user}></Pokemon>
+          ) : (
+            ""
+          )}
+          {showFavorites ? (
+            <Favorites favorites={favorites} user={user}></Favorites>
+          ) : (
+            ""
+          )}
+        </div>
+        <br/>
+        <div class="row">
+          <footer>
+            Created by Alex Moeller and Ely Lam 2020{" "}
+            <img
+              src="./images/pokeball.png"
+              alt="Pokeball"
+              title="Pokeball"
+              width="20"
+            />
+          </footer>
+        </div>
       </div>
     </div>
   );

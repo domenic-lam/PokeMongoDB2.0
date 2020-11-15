@@ -5,6 +5,19 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+
+}
+
+.navbar {
+  background-color: #CC0000;
+  border: 2;
+  border-color: black;
+}
+
+.nav-item {
+  background-color: white;
+  color: #3B4CCA;
 }
 
 code {
@@ -18,9 +31,7 @@ ul {
 
 ol li {
   columns: 1;
-  -webkit-columns: 1;
-  -moz-columns: 1;
   float: left;
-  width: 33.3%;
+  width: 33.33333%;
   list-style-position: inside;
 }
