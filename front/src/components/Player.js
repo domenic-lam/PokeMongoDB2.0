@@ -144,7 +144,7 @@ function Player(props) {
   return (
     <div class="row">
       <br/>
-      <ol>{renderTeams()}</ol>
+      <ol class="Player-ol">{renderTeams()}</ol>
       <br/>
       <br/>
       <br/>

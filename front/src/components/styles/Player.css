@@ -3,8 +3,8 @@ ul {
   width: 100%
 }
 
-ol li{
-  columns: 1;
+.Player-ol li{
+  columns: 0;
   float: left;
   width: 33.33333%;
   list-style-position: inside;

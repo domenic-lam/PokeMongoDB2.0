@@ -175,8 +175,10 @@ function App() {
               title="Pokeball"
               width="20"
             />
+            <br/>
           </footer>
         </div>
+        <br/>
       </div>
     </div>
   );

@@ -88,7 +88,7 @@ function Pokemon(props) {
         />
       </label>
       <br />
-      <ol>{renderPokemon()}</ol>
+      <ol class="Pokemon-ol">{renderPokemon()}</ol>
     </div>
   );
 }

@@ -15,8 +15,12 @@ body {
   border-color: black;
 }
 
+.navbar-brand {
+  font-size: 35px;
+}
+
 .nav-item {
-  background-color: white;
+  background-color: #FFDE00;
   color: #3B4CCA;
 }
 
