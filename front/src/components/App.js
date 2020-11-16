@@ -75,13 +75,12 @@ function App() {
     <div className="App">
       <nav className="navbar navbar-light">
         <a className="navbar-brand" href="/">
-          <img
+          <h1 className="navbar-brand-h1"><img
             src="./images/pika.png"
             alt="Pikachu"
             title="Pikachu"
             width="60"
-          />
-          PokeMongoDB
+          />PokeMongoDB</h1>
         </a>
         <a
           className="nav-item nav-link"

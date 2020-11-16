@@ -10,18 +10,30 @@ body {
 }
 
 .navbar {
-  background-color: #CC0000;
+  background-color: #FF0000;
   border: 2;
   border-color: black;
-}
-
-.navbar-brand {
-  font-size: 35px;
+  outline-color: black;
 }
 
 .nav-item {
-  background-color: #FFDE00;
-  color: #3B4CCA;
+  color: #FFDE00;
+  font-size: 25px;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: #3B4CCA;
+}
+
+.navbar-brand-h1 {
+  font-size: 45px;
+  color: #FFDE00;
+  -webkit-text-stroke-width: 1.2px;
+  -webkit-text-stroke-color: #3B4CCA;
+}
+
+h1 {
+  color: #FFDE00;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: #3B4CCA;
 }
 
 code {
