@@ -4,7 +4,7 @@ ul {
 }
 
 .Player-ol li{
-  columns: 0;
+  columns: 1;
   float: left;
   width: 33.33333%;
   list-style-position: inside;

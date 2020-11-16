@@ -6,14 +6,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: white;
-
 }
 
 .navbar {
   background-color: #FF0000;
-  border: 2;
   border-color: black;
-  outline-color: black;
+  border-bottom: 2px;
 }
 
 .nav-item {
@@ -21,6 +19,8 @@ body {
   font-size: 25px;
   -webkit-text-stroke-width: .5px;
   -webkit-text-stroke-color: #3B4CCA;
+  border-bottom: 2px;
+  border-color: black;
 }
 
 .navbar-brand-h1 {
