@@ -9,43 +9,65 @@ function Player(props) {
     console.log(teams);
     if (teams.length === 0) return null;
     let poke = teams[0].team[0];
+    let pokeName = props.pokemon.filter((p) =>
+      p._id.startsWith(poke));
+
     let poke1 = teams[0].team[1];
+    let pokeName1 = props.pokemon.filter((p) =>
+      p._id.startsWith(poke1));
+
     let poke2 = teams[0].team[2];
+    let pokeName2 = props.pokemon.filter((p) =>
+      p._id.startsWith(poke2));
+
     let poke3 = teams[0].team[3];
+    let pokeName3 = props.pokemon.filter((p) =>
+      p._id.startsWith(poke3));
+
     let poke4 = teams[0].team[4];
+    let pokeName4 = props.pokemon.filter((p) =>
+      p._id.startsWith(poke4));
+
     let poke5 = teams[0].team[5];
+    let pokeName5 = props.pokemon.filter((p) =>
+      p._id.startsWith(poke5));
     return (
       <div>
         <li key={poke}>
           <img src={`./images/${poke}.png`} alt={`(#${poke}) Sprite`} />
-          <br />
-          {props.pokemon.name}
-          <br />
+          <br/>
+          {pokeName[0].Pokemon}
+          <br/>
         </li>
         <li key={poke1}>
           <img src={`./images/${poke1}.png`} alt={`(#${poke1}) Sprite`} />
-          <br />
-          <br />
+          <br/>
+          {pokeName1[0].Pokemon}
+          <br/>
         </li>
         <li key={poke2}>
           <img src={`./images/${poke2}.png`} alt={`(#${poke2}) Sprite`} />
-          <br />
-          <br />
+          <br/>
+          {pokeName2[0].Pokemon}
+          <br/>
         </li>
         <li key={poke3}>
           <img src={`./images/${poke3}.png`} alt={`(#${poke3}) Sprite`} />
-          <br />
-          <br />
+          <br/>
+          {pokeName3[0].Pokemon}
+          <br/>
         </li>
         <li key={poke4}>
           <img src={`./images/${poke4}.png`} alt={`(#${poke4}) Sprite`} />
-          <br />
-          <br />
+          <br/>
+          {pokeName4[0].Pokemon}
+          <br/>
         </li>
         <li key={poke5}>
           <img src={`./images/${poke5}.png`} alt={`(#${poke5}) Sprite`} />
-          <br />
-          <br />
+          <br/>
+          {pokeName5[0].Pokemon}
+          <br/>
         </li>
       </div>
     );
@@ -120,10 +142,12 @@ function Player(props) {
   };
 
   return (
-    <div>
-      <br />
+    <div class="row">
+      <br/>
       <ol>{renderTeams()}</ol>
-      <br />
+      <br/>
+      <br/>
+      <br/>
       <ul>{renderStats()}</ul>
     </div>
   );

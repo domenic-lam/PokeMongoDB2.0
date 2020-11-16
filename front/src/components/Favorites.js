@@ -12,7 +12,7 @@ function Favorites(props) {
     console.log(favArray);
     return favArray.map((p) => (
       <li key={p}>
-        {p} (#{p}) <br/>
+        {props.pokemon.filter((s) => s._id.startsWith(p))[0].Pokemon} (#{p}) <br/>
         <img
           src={`./images/${p}.png`}
           alt={`${p} (#${p}) Sprite`}
@@ -21,7 +21,7 @@ function Favorites(props) {
         <br/>
         <form action="/updateTeam" method="post">
           <label htmlFor="position">
-            Choose the position: <br />
+            Choose the position: <br/>
           </label>
           <select name="position" id={`position${p}`}>
             <option value="1">1</option>
@@ -56,7 +56,7 @@ function Favorites(props) {
           />
           <button type="submit">Delete favorite</button>
         </form>
-        <br />
+        <br/>
       </li>
     ));
   };

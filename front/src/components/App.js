@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./styles/App.css";
+import "./styles/index.css";
 
 import Pokemon from "./Pokemon.js";
 import Player from "./Player.js";
@@ -137,11 +138,12 @@ function App() {
           <span className="sr-only">(current)</span>
         </a>
       </nav>
-      <div class="container text-left">
-        <div class="row">
+      <br/>
+      <div className="container text-left">
+        <div className="row">
           <h1>Build Your Best Team!</h1>
         </div>
-        <div class="row">
+        <div className="row">
           {showUserEnter ? (
             <User handleChange={handleChange} player={player}></User>
           ) : (
@@ -158,13 +160,13 @@ function App() {
             ""
           )}
           {showFavorites ? (
-            <Favorites favorites={favorites} user={user}></Favorites>
+            <Favorites favorites={favorites} pokemon={pokemon} user={user}></Favorites>
           ) : (
             ""
           )}
         </div>
         <br/>
-        <div class="row">
+        <div className="row">
           <footer>
             Created by Alex Moeller and Ely Lam 2020{" "}
             <img

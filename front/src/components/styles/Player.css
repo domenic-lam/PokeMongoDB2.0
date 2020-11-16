@@ -1,3 +1,12 @@
 ul {
   columns: 8;
+  width: 100%
+}
+
+ol li{
+  columns: 1;
+  float: left;
+  width: 33.33333%;
+  list-style-position: inside;
+  text-align: center;
 }
