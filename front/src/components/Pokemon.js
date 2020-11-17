@@ -53,7 +53,7 @@ function Pokemon(props) {
               value={`${props.user}`}
             />
             <br />
-            <button type="submit">Add to your team</button>
+            <button type="submit">Add to team</button>
           </form>
           <form action="/newFav" method="post">
             <input

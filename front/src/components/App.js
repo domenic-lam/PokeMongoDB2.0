@@ -16,6 +16,7 @@ function App() {
   const [showUserEnter, setShowUserEnter] = useState(true);
   const [favorites, setFavorites] = useState([]);
   const [showFavorites, setShowFavorites] = useState(false);
+  const topbutton = document.getElementById("topBtn"); // Back to top
 
   useEffect(() => {
     const getPokemon = async () => {
@@ -62,6 +63,7 @@ function App() {
     }
   }, []); // Only run the first time; gets username
 
+  // changes user and loads respective team and favorites
   function handleChange(username) {
     console.log(username);
     setUser(username);
@@ -69,6 +71,22 @@ function App() {
     setShowTeam(true);
     setShowPokemon(false);
     setShowUserEnter(false);
+  }
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      topbutton.style.display = "block";
+    } else {
+      topbutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
 
   return (
@@ -164,6 +182,7 @@ function App() {
           ) : (
             ""
           )}
+          <button onClick={topFunction} id="topBtn" title="Go to top">Back to Top</button>
         </div>
         <br/>
         <div className="row">
