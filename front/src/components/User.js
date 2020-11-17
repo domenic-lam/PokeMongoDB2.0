@@ -58,7 +58,7 @@ function User(props) {
     <div>
       <div>
         <p>
-          Welcome to PokeMongoDB! To get started create an account and login
+          Welcome to PokeMongoDB! To get started, create an account and login
           from this page. Once you've created your account and logged in, you will be taken to
           the Team Page preloaded with a team of six. The Team Page in the navigation bar above will display your
           Pokemon as well as the sum of their types! If you would like to change
