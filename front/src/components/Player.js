@@ -131,6 +131,7 @@ function Player(props) {
 
   return (
     <div className="row">
+      <h2>{props.user}'s Team</h2>
       <br/>
       <ol className="Player-ol">{renderTeams()}</ol>
       <br/>

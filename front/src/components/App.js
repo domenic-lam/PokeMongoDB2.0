@@ -159,9 +159,6 @@ function App() {
       <br/>
       <div className="container text-left">
         <div className="row">
-          <h1>Build Your Best Team!</h1>
-        </div>
-        <div className="row">
           <button onClick={topFunction} id="topBtn" title="Go to top">Back to Top</button>
           {showUserEnter ? (
             <User handleChange={handleChange} player={player}></User>

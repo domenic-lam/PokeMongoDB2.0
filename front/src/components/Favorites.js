@@ -63,6 +63,7 @@ function Favorites(props) {
 
   return (
     <div class="col">
+      <h2>Manage Favorites</h2>
       <ol>{renderFavorites()}</ol>
     </div>
   );

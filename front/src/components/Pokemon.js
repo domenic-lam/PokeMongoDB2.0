@@ -79,6 +79,7 @@ function Pokemon(props) {
 
   return (
     <div>
+      <h2>Add Pokemon to your Team!</h2>
       <label htmlFor="search">
         Search for a pokemon to add to your team:{" "}
         <input

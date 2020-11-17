@@ -57,6 +57,7 @@ function User(props) {
   return (
     <div>
       <div>
+        <h2>Enter Your Username</h2>
         <p>
           Welcome to PokeMongoDB! To get started, create an account and login
           from this page. Once you've created your account and logged in, you will be taken to

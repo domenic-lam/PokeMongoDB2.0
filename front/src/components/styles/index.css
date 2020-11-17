@@ -45,6 +45,15 @@ h1 {
   font-display: swap;
 }
 
+h2 {
+  font-family: "pokemon-font";
+  font-size: 35px;
+  color: #FFDE00;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #3B4CCA;
+  font-display: swap;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
