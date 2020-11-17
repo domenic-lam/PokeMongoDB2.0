@@ -12,7 +12,7 @@ function Pokemon(props) {
           p.Pokemon && p.Pokemon.toLowerCase().startsWith(search.toLowerCase())
       )
       .map((p) => (
-        <li key={p._id}>
+        <li key={p._id} className="Pokemon-li">
           {p.Pokemon} (#{p._id}) <br />
           <img
             src={`./images/${p._id}.png`}

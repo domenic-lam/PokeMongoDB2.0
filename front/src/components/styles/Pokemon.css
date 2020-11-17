@@ -1,4 +1,4 @@
-.Pokemon-ol li{
+.Pokemon-ol .Pokemon-li{
   columns: 1;
   float: left;
   width: 33.33333%;

@@ -12,7 +12,7 @@ function App() {
   const [showPokemon, setShowPokemon] = useState(false);
   const [player, setPlayer] = useState([]);
   const [showTeam, setShowTeam] = useState(false);
-  const [user, setUser] = useState("Enter User");
+  const [user, setUser] = useState("");
   const [showUserEnter, setShowUserEnter] = useState(true);
   const [favorites, setFavorites] = useState([]);
   const [showFavorites, setShowFavorites] = useState(false);
