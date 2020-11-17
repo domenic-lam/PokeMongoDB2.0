@@ -168,7 +168,8 @@ function App() {
         <br/>
         <div className="row">
           <footer>
-            Created by Alex Moeller and Ely Lam 2020{" "}
+            All character and image rights to Pokemon, Nintendo<br/>
+            Webpage created by Alex Moeller and Ely Lam 2020{" "}
             <img
               src="./images/pokeball.png"
               alt="Pokeball"
