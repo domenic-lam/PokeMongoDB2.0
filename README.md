@@ -17,3 +17,6 @@ Improve on previous project, emphasizing design, accessibility, and usability co
   In both cmds, enter npm install to install dependencies\
   In both cmds, enter npm start to start the project\
   The project should open, otherwise navigate to: http://localhost:8080 in your browser.
+
+# Copyright Info
+All rights to Pokémon and Nintendo. Font generated through https://fontmeme.com/pokemon-font/.
