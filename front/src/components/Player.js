@@ -34,39 +34,39 @@ function Player(props) {
     return (
       <div>
         <li key={poke}>
+          {pokeName[0].Pokemon} (#{poke})
           <img src={`./images/${poke}.png`} alt={`(#${poke}) Sprite`} />
           <br/>
-          {pokeName[0].Pokemon}
           <br/>
         </li>
         <li key={poke1}>
+          {pokeName1[0].Pokemon} (#{poke1})
           <img src={`./images/${poke1}.png`} alt={`(#${poke1}) Sprite`} />
           <br/>
-          {pokeName1[0].Pokemon}
           <br/>
         </li>
         <li key={poke2}>
+          {pokeName2[0].Pokemon} (#{poke2})
           <img src={`./images/${poke2}.png`} alt={`(#${poke2}) Sprite`} />
           <br/>
-          {pokeName2[0].Pokemon}
           <br/>
         </li>
         <li key={poke3}>
+          {pokeName3[0].Pokemon} (#{poke3})
           <img src={`./images/${poke3}.png`} alt={`(#${poke3}) Sprite`} />
           <br/>
-          {pokeName3[0].Pokemon}
           <br/>
         </li>
         <li key={poke4}>
+          {pokeName4[0].Pokemon} (#{poke4})
           <img src={`./images/${poke4}.png`} alt={`(#${poke4}) Sprite`} />
           <br/>
-          {pokeName4[0].Pokemon}
           <br/>
         </li>
         <li key={poke5}>
+          {pokeName5[0].Pokemon} (#{poke5})
           <img src={`./images/${poke5}.png`} alt={`(#${poke5}) Sprite`} />
           <br/>
-          {pokeName5[0].Pokemon}
           <br/>
         </li>
       </div>

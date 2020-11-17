@@ -59,48 +59,60 @@ function User(props) {
       <div>
         <p>
           Welcome to PokeMongoDB! To get started create an account and login
-          from this page (note that creating an account may lead you away from
-          the login page). Once you've logged in, check out your team by
-          clicking Team Page in the NavBar. The Team Page will display your
+          from this page. Once you've created your account and logged in, you will be taken to
+          the Team Page preloaded with a team of six. The Team Page in the navigation bar above will display your
           Pokemon as well as the sum of their types! If you would like to change
-          a Pokemon in your team, click on Pokemon List in the NavBar. From
+          a Pokemon in your team, click on Pokemon List above. From
           there, you can search for the Pokemon you would like in your team with
           the search form, or scroll until you find one you like. Choose the
           position you would like to place the Pokemon in your team and click
           the add Pokemon button to update your team! Finally, if there are
           Pokemon you would like to frequently move in and out of your team you
-          can add them or remove them from your favorites section to do easily!
+          can add them or remove them from your favorites section to do so easily!
         </p>
       </div>
       <br />
       <div>
         <form onSubmit={submit}>
-          <input type="text" placeholder="Username" onChange={usernameChange} />
-          <input type="submit" value="Login" />
+          <label className="visuallyhidden">
+            <input
+              type="text"
+              placeholder="Username"
+              onChange={usernameChange}
+              aria-label="Enter Username"
+            />
+            <input type="submit" value="Login" />
+          </label>
         </form>
       </div>
       <br />
       <div>
         <form action="/newUser" method="post" onSubmit={haveUser}>
-          <input
-            type="text"
-            name="newUsername"
-            placeholder="Username"
-            onChange={usernameChange}
-          />
-          <input type="submit" value="Create User" />
+          <label className="visuallyhidden">
+            <input
+              type="text"
+              name="newUsername"
+              placeholder="Username"
+              onChange={usernameChange}
+              aria-label="Create User"
+            />
+            <input type="submit" value="Create User" />
+          </label>
         </form>
       </div>
-      <br />
+      <br/>
       <div>
         <form action="/deleteUser" method="post" onSubmit={deleteUser}>
-          <input
-            type="text"
-            placeholder="Username"
-            name="deletedUser"
-            onChange={usernameChange}
-          />
-          <input type="submit" value="Delete User" />
+          <label className="visuallyhidden">
+            <input
+              type="text"
+              placeholder="Username"
+              name="deletedUser"
+              onChange={usernameChange}
+              aria-label="Delete User"
+            />
+            <input type="submit" value="Delete User" />
+          </label>
         </form>
       </div>
     </div>

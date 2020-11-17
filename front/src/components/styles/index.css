@@ -9,31 +9,40 @@ body {
 }
 
 .navbar {
-  background-color: #FF0000;
-  border-color: black;
-  border-bottom: 2px;
+  background-color: #CC0000;
+  border-bottom: 15px solid black;
 }
 
 .nav-item {
-  color: #FFDE00;
-  font-size: 25px;
+  color: white;
+  font-size: 20px;
   -webkit-text-stroke-width: .5px;
   -webkit-text-stroke-color: #3B4CCA;
   border-bottom: 2px;
   border-color: black;
 }
 
+@font-face {
+  font-family: "pokemon-font";
+  src: url("pokemon_font.ttf");
+}
+/*Pokemon font from https://fontmeme.com/pokemon-font/*/
+
 .navbar-brand-h1 {
-  font-size: 45px;
+  font-family: "pokemon-font"; 
+  font-size: 30px;
   color: #FFDE00;
-  -webkit-text-stroke-width: 1.2px;
+  -webkit-text-stroke-width: 1.75px;
   -webkit-text-stroke-color: #3B4CCA;
+  font-display: swap;
 }
 
 h1 {
+  font-family: "pokemon-font";
   color: #FFDE00;
-  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #3B4CCA;
+  font-display: swap;
 }
 
 code {

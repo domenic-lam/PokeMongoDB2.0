@@ -79,7 +79,8 @@ function App() {
             src="./images/pika.png"
             alt="Pikachu"
             title="Pikachu"
-            width="60"
+            width="56"
+            height="50"
           />PokeMongoDB</h1>
         </a>
         <a
@@ -173,6 +174,7 @@ function App() {
               alt="Pokeball"
               title="Pokeball"
               width="20"
+              height="21"
             />
             <br/>
           </footer>
