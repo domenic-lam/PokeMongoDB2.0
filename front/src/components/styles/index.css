@@ -30,7 +30,7 @@ body {
 
 .navbar-brand-h1 {
   font-family: "pokemon-font"; 
-  font-size: 30px;
+  font-size: 35px;
   color: #FFDE00;
   -webkit-text-stroke-width: 1.75px;
   -webkit-text-stroke-color: #3B4CCA;
@@ -47,7 +47,7 @@ h1 {
 
 h2 {
   font-family: "pokemon-font";
-  font-size: 35px;
+  font-size: 30px;
   color: #FFDE00;
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: #3B4CCA;
