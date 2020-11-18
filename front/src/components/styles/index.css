@@ -69,3 +69,49 @@ ol li {
   width: 33.33333%;
   list-style-position: inside;
 }
+
+/* Buttons Formatting */
+button {
+  align-items: center;
+  background-color: #FFDE00;
+  color: black;
+  border-color: #3B4CCA;
+  cursor: pointer; /* Add a mouse pointer on hover */
+  margin-bottom: 10px;
+}
+
+button:hover, button:focus {
+  color: white;
+  background-color: #B3A125; /* Add a dark-grey background on hover */
+}
+
+.delete {
+  align-items: center;
+  background-color: #FF0000;
+  color: black;
+  border-color: #CC0000;
+}
+
+.delete:hover, .delete:focus {
+  background-color: #CC0000;
+}
+
+#topBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 10px; /* Place the button at the bottom of the page */
+  right: 20px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border-color: #3B4CCA; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #FFDE00; /* Set a background color */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 5px; /* Some padding */
+  font-size: 15px; /* Increase font size */
+}
+
+#topBtn:hover, #topBtn:focus {
+  color: white;
+  background-color: #B3A125; /* Add a dark-grey background on hover */
+}

@@ -159,7 +159,6 @@ function App() {
       <br/>
       <div className="container text-left">
         <div className="row">
-          <button onClick={topFunction} id="topBtn" title="Go to top">Back to Top</button>
           {showUserEnter ? (
             <User handleChange={handleChange} player={player}></User>
           ) : (
@@ -180,6 +179,7 @@ function App() {
           ) : (
             ""
           )}
+          <button onClick={topFunction} id="topBtn" title="Go to top">Back to Top</button>
         </div>
         <br/>
         <div className="row">

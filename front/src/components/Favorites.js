@@ -54,7 +54,7 @@ function Favorites(props) {
             id="user"
             value={`${props.user}`}
           />
-          <button type="submit">Delete favorite</button>
+          <button className="delete" type="submit">Delete favorite</button>
         </form>
         <br/>
       </li>

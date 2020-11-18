@@ -15,6 +15,7 @@ function Pokemon(props) {
         <li key={p._id} className="Pokemon-li">
           {p.Pokemon} (#{p._id}) <br />
           <img
+            className="pokemon-img"
             src={`./images/${p._id}.png`}
             alt={`${p.Pokemon} (#${p._id}) Sprite`}
             title={`${p.Pokemon} (#${p._id})`}

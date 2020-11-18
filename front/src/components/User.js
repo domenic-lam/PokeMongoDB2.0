@@ -56,23 +56,21 @@ function User(props) {
 
   return (
     <div>
-      <div>
-        <h2>Enter Your Username</h2>
-        <p>
-          Welcome to PokeMongoDB! To get started, create an account and login
-          from this page. Once you've created your account and logged in, you will be taken to
-          the Team Page preloaded with a team of six. The Team Page in the navigation bar above will display your
-          Pokemon as well as the sum of their types! If you would like to change
-          a Pokemon in your team, click on Pokemon List above. From
-          there, you can search for the Pokemon you would like in your team with
-          the search form, or scroll until you find one you like. Choose the
-          position you would like to place the Pokemon in your team and click
-          the add Pokemon button to update your team! Finally, if there are
-          Pokemon you would like to frequently move in and out of your team you
-          can add them or remove them from your favorites section to do so easily!
-        </p>
-      </div>
-      <br />
+      <p className="user-p">
+        <h1>Welcome to PokeMongoDB!</h1> To get started, create an account and login
+        from this page. Once you've created your account and logged in, you will be taken to
+        the Team Page preloaded with a team of six. The Team Page in the navigation bar above will display your
+        Pokemon as well as the sum of their types! If you would like to change
+        a Pokemon in your team, click on Pokemon List above. From
+        there, you can search for the Pokemon you would like in your team with
+        the search form, or scroll until you find one you like. Choose the
+        position you would like to place the Pokemon in your team and click
+        the add Pokemon button to update your team! Finally, if there are
+        Pokemon you would like to frequently move in and out of your team you
+        can add them or remove them from your favorites section easily!
+      </p>
+      <h2>Enter Your Username</h2>
+      <br/>
       <div>
         <form onSubmit={submit}>
           <label className="visuallyhidden">
@@ -82,11 +80,10 @@ function User(props) {
               onChange={usernameChange}
               aria-label="Enter Username"
             />
-            <input type="submit" value="Login" />
+            <button type="submit" value="Login">Login</button>
           </label>
         </form>
       </div>
-      <br />
       <div>
         <form action="/newUser" method="post" onSubmit={haveUser}>
           <label className="visuallyhidden">
@@ -97,11 +94,10 @@ function User(props) {
               onChange={usernameChange}
               aria-label="Create User"
             />
-            <input type="submit" value="Create User" />
+            <button type="submit" value="Create User">Create User</button>
           </label>
         </form>
       </div>
-      <br/>
       <div>
         <form action="/deleteUser" method="post" onSubmit={deleteUser}>
           <label className="visuallyhidden">
@@ -112,7 +108,7 @@ function User(props) {
               onChange={usernameChange}
               aria-label="Delete User"
             />
-            <input type="submit" value="Delete User" />
+            <button className="delete" type="submit" value="Delete User">Delete User</button>
           </label>
         </form>
       </div>
