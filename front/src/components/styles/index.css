@@ -65,6 +65,7 @@ ul {
 
 ol li {
   columns: 1;
+  grid-row: 3;
   float: left;
   width: 33.33333%;
   list-style-position: inside;
