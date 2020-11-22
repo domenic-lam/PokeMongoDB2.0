@@ -2,11 +2,3 @@
   columns: 4;
   width: 100%
 }
-
-.Player-ol li{
-  columns: 1;
-  grid-row: 3;
-  float: left;
-  width: 33.333%;
-  list-style-position: inside;
-}

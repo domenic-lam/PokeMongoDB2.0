@@ -31,8 +31,7 @@ function Pokemon(props) {
           Type II: {p.Type_2} <br />
           <form action="/updateTeam" method="post">
             <label htmlFor="position">
-              Choose the position: <br />
-            </label>
+              Choose the position: {" "}
             <select name="position" id={`position${p._id}`}>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -41,16 +40,17 @@ function Pokemon(props) {
               <option value="5">5</option>
               <option value="6">6</option>
             </select>
+            </label>
             <input
               type="hidden"
               name="newPokemon"
-              id={`newPokemon${p._id}`}
+              id={`addTeam${p._id}`}
               value={`${p._id}`}
             />
             <input
               type="hidden"
               name="user"
-              id="user"
+              id={`addTeam${props.user}${p._id}`}
               value={`${props.user}`}
             />
             <br />
@@ -60,13 +60,13 @@ function Pokemon(props) {
             <input
               type="hidden"
               name="newPokemon"
-              id={`newPokemon${p._id}`}
+              id={`addFavorite${p._id}`}
               value={`${p._id}`}
             />
             <input
               type="hidden"
               name="user"
-              id="user"
+              id={`addFavorites${props.user}${p._id}`}
               value={`${props.user}`}
             />
             <button type="submit">Add to favorites</button>
@@ -79,8 +79,8 @@ function Pokemon(props) {
   console.log("rendering Pokemon", search);
 
   return (
-    <div>
-      <h2>Add Pokemon to your Team!</h2>
+    <div className="col">
+      <h1>Add Pokemon to your Team!</h1>
       <label htmlFor="search">
         Search for a pokemon to add to your team:{" "}
         <input

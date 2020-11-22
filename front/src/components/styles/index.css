@@ -32,7 +32,7 @@ body {
   font-family: "pokemon-font"; 
   font-size: 35px;
   color: #FFDE00;
-  -webkit-text-stroke-width: 1.75px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #3B4CCA;
   font-display: swap;
 }
@@ -40,16 +40,7 @@ body {
 h1 {
   font-family: "pokemon-font";
   color: #FFDE00;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #3B4CCA;
-  font-display: swap;
-}
-
-h2 {
-  font-family: "pokemon-font";
-  font-size: 30px;
-  color: #FFDE00;
-  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-width: 2.5px;
   -webkit-text-stroke-color: #3B4CCA;
   font-display: swap;
 }
@@ -115,4 +106,16 @@ button:hover, button:focus {
 #topBtn:hover, #topBtn:focus {
   color: white;
   background-color: #B3A125; /* Add a dark-grey background on hover */
+}
+
+.skip-link {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
 }

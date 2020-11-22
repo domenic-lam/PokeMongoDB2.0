@@ -32,7 +32,7 @@ function Player(props) {
     let pokeName5 = props.pokemon.filter((p) =>
       p._id.startsWith(poke5));
     return (
-      <div>
+      <ol>
         <li key={poke}>
           {pokeName[0].Pokemon} (#{poke})<br/>          
           <img src={`./images/${poke}.png`} alt={`(#${poke}) Sprite`} />
@@ -57,7 +57,7 @@ function Player(props) {
           {pokeName5[0].Pokemon} (#{poke5})<br/>
           <img src={`./images/${poke5}.png`} alt={`(#${poke5}) Sprite`} />
         </li>
-      </div>
+      </ol>
     );
   };
 
@@ -108,7 +108,7 @@ function Player(props) {
       }
     }
     return (
-      <div>
+      <ul className="Player-ul">
         <li>Bug : {statMap.get("Bug")}</li>
         <li>Dragon : {statMap.get("Dragon")}</li>
         <li>Electric : {statMap.get("Electric")}</li>
@@ -125,19 +125,19 @@ function Player(props) {
         <li>Rock : {statMap.get("Rock")}</li>
         <li>Steel : {statMap.get("Steel")}</li>
         <li>Water : {statMap.get("Water")}</li>
-      </div>
+      </ul>
     );
   };
 
   return (
-    <div>
-      <h2>{props.user}'s Team</h2>
+    <div className="col">
+      <h1>{props.user}'s Team</h1>
       <br/>
-      <ol className="Player-ol">{renderTeams()}</ol>
+      <div id="team">{renderTeams()}</div>
       <br/>
       <br/>
       <br/>
-      <ul className="Player-ul">{renderStats()}</ul>
+      <div id="teamStats">{renderStats()}</div>
     </div>
   );
 }

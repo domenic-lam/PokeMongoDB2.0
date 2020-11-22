@@ -55,23 +55,23 @@ function User(props) {
   }
 
   return (
-    <div>
+    <div className="col">
       <p className="user-p">
-        <h1>Welcome to PokeMongoDB!</h1> To get started, create an account and login
+        <h1>Welcome to PokéMongoDB!</h1> To get started, create an account and login
         from this page. Once you've created your account and logged in, you will be taken to
         the Team Page preloaded with a team of six. The Team Page in the navigation bar above will display your
-        Pokemon as well as the sum of their types! If you would like to change
-        a Pokemon in your team, click on Pokemon List above. From
-        there, you can search for the Pokemon you would like in your team with
+        Pokémon as well as the sum of their types! If you would like to change
+        a Pokémon in your team, click on Pokémon List above. From
+        there, you can search for the Pokémon you would like in your team with
         the search form, or scroll until you find one you like. Choose the
-        position you would like to place the Pokemon in your team and click
-        the add Pokemon button to update your team! Finally, if there are
-        Pokemon you would like to frequently move in and out of your team you
+        position you would like to place the Pokémon in your team and click
+        the add Pokémon button to update your team! Finally, if there are
+        Pokémon you would like to frequently move in and out of your team you
         can add them or remove them from your favorites section easily!
       </p>
-      <h2>Enter Your Username</h2>
+      <h1>Enter Your Username</h1>
       <br/>
-      <div>
+      <div id="userLogin">
         <form onSubmit={submit}>
           <label className="visuallyhidden">
             <input
@@ -84,7 +84,7 @@ function User(props) {
           </label>
         </form>
       </div>
-      <div>
+      <div id="userCreate">
         <form action="/newUser" method="post" onSubmit={haveUser}>
           <label className="visuallyhidden">
             <input
@@ -98,7 +98,7 @@ function User(props) {
           </label>
         </form>
       </div>
-      <div>
+      <div id="userDelete">
         <form action="/deleteUser" method="post" onSubmit={deleteUser}>
           <label className="visuallyhidden">
             <input

@@ -92,6 +92,7 @@ function App() {
   return (
     <div className="App">
       <nav className="navbar navbar-light">
+        <a href="#main" className="skip-link" aria-label="Skip to page content">Skip to main content</a>
         <a className="navbar-brand" href="/">
           <h1 className="navbar-brand-h1"><img
             src="./images/pika.png"
@@ -99,7 +100,7 @@ function App() {
             title="Pikachu"
             width="56"
             height="50"
-          />PokeMongoDB</h1>
+          /> PokéMongoDB</h1>
         </a>
         <a
           className="nav-item nav-link"
@@ -112,7 +113,7 @@ function App() {
             setShowFavorites(false);
           }}
         >
-          Team Page<span className="sr-only">(current)</span>
+          Team Page
         </a>
         <a
           className="nav-item nav-link"
@@ -125,7 +126,7 @@ function App() {
             setShowFavorites(false);
           }}
         >
-          Pokemon List<span className="sr-only">(current)</span>
+          Pokémon List
         </a>
         <a
           className="nav-item nav-link"
@@ -139,7 +140,6 @@ function App() {
           }}
         >
           Favorites
-          <span className="sr-only">(current)</span>
         </a>
         <a
           className="nav-item active nav-link navbar-right"
@@ -157,7 +157,7 @@ function App() {
         </a>
       </nav>
       <br/>
-      <div className="container text-left">
+      <div className="container text-left" id="main" role="main" tabindex="-1">
         <div className="row">
           {showUserEnter ? (
             <User handleChange={handleChange} player={player}></User>
@@ -183,7 +183,7 @@ function App() {
         </div>
         <br/>
         <div className="row">
-          <footer>
+          <div className="col">
             All character and image rights to Pokémon and Nintendo.<br/>
             Webpage created by Alex Moeller and Ely Lam 2020{" "}
             <img
@@ -194,9 +194,8 @@ function App() {
               height="21"
             />
             <br/>
-          </footer>
+          </div>
         </div>
-        <br/>
       </div>
     </div>
   );

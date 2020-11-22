@@ -21,23 +21,27 @@ function Favorites(props) {
         <br/>
         <form action="/updateTeam" method="post">
           <label htmlFor="position">
-            Choose the position: <br/>
+            Choose the position: {" "}
+            <select name="position" id={`position${p}`}>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
           </label>
-          <select name="position" id={`position${p}`}>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-          </select>
           <input
             type="hidden"
             name="newPokemon"
             id={`addNewPokemon${p}`}
             value={`${p}`}
           />
-          <input type="hidden" name="user" id="userAdd" value={`${props.user}`} />
+          <input
+            type="hidden"
+            name="user"
+            id={`${props.user}Add${p}`}
+            value={`${props.user}`} />
           <br />
           <button type="submit">Add to team!</button>
         </form>
@@ -51,7 +55,7 @@ function Favorites(props) {
           <input
             type="hidden"
             name="player"
-            id="userDelete"
+            id={`${props.user}Delete${p}`}
             value={`${props.user}`}
           />
           <button className="delete" type="submit">Delete favorite</button>
@@ -62,8 +66,8 @@ function Favorites(props) {
   };
 
   return (
-    <div class="col">
-      <h2>Manage Favorites</h2>
+    <div className="col">
+      <h1>Manage Favorites</h1>
       <ol>{renderFavorites()}</ol>
     </div>
   );
