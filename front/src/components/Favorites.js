@@ -34,10 +34,10 @@ function Favorites(props) {
           <input
             type="hidden"
             name="newPokemon"
-            id={`newPokemon${p}`}
+            id={`addNewPokemon${p}`}
             value={`${p}`}
           />
-          <input type="hidden" name="user" id="user" value={`${props.user}`} />
+          <input type="hidden" name="user" id="userAdd" value={`${props.user}`} />
           <br />
           <button type="submit">Add to team!</button>
         </form>
@@ -45,13 +45,13 @@ function Favorites(props) {
           <input
             type="hidden"
             name="removeMon"
-            id={`newPokemon${p}`}
+            id={`deleteNewPokemon${p}`}
             value={`${p}`}
           />
           <input
             type="hidden"
             name="player"
-            id="user"
+            id="userDelete"
             value={`${props.user}`}
           />
           <button className="delete" type="submit">Delete favorite</button>
