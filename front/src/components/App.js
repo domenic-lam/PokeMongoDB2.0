@@ -179,7 +179,7 @@ function App() {
           ) : (
             ""
           )}
-          <button onClick={topFunction} id="topBtn" title="Go to top">Back to Top</button>
+          <button onClick={topFunction} id="topBtn" title="Go to top">Top</button>
         </div>
         <br/>
         <div className="row">
@@ -193,9 +193,9 @@ function App() {
               width="20"
               height="21"
             />
-            <br/>
           </div>
         </div>
+        <br/>
       </div>
     </div>
   );

@@ -82,7 +82,7 @@ function Pokemon(props) {
     <div className="col">
       <h1>Add Pokemon to your Team!</h1>
       <label htmlFor="search">
-        Search for a pokemon to add to your team:{" "}
+        Search for a Pokémon by name to add to your team or favorites:{" "}
         <input
           type="text"
           value={search}
