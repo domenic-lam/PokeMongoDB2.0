@@ -103,7 +103,7 @@ function MyDB() {
     client.close();
     return;
   };
-
+   //just wondering if you insert all dummy users to you mongoDB instead of having a register function 
   myDB.loadPokemon = async () => {
     const client = new MongoClient(uri, { useUnifiedTopology: true });
     await client.connect();
